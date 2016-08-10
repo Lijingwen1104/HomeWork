@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//位数不够补零
+		function PrefixInteger(num, n) {
+            return (Array(n).join(0) + num).slice(-n);
+        }
+        //过滤数字
+		var reg=/\d+/g;
+        var rgbs=['rgb(247,163,101)','rgb(176,162,162)','rgb(109,167,138)'];
+        function Rgb2Hex(rgbs){
+        	var hexs=[];
+        	for (var i = 0; i < rgbs.length; i++) {
+        		var hex="#";//数组中每一个hex值
+        		for(var j=0;j<3;j++){
+        			hex+=PrefixInteger(parseInt(rgbs[i].match(reg)[j]).toString(16),2);
+        		}
+        		hexs.push(hex);
+        	}
+        	return hexs;
+        }
+        console.log(Rgb2Hex(rgbs));
+
+		var hexs=["#f7a365","#b0a2a2","#6da78a"];
+		function Hex2Rgb(hexs){
+			var rgbs=[];
+			for (var i = 0; i < hexs.length; i++) {
+				var rgb="";
+				for(var j=0;j<3;j++){
+					rgb+=hexs[i].replace(/#/,"").split(2);
+				}
+					rgbs.push(rgb);
+				/*rgbs.push();*/
+			}
+			return rgbs;
+		}	
+		console.log(Hex2Rgb(hexs));
+
+
+		/*var rgb1='rgb(247,163,001)';
+		var r2=rgb1.match(reg);
+		console.log(r2);
+		console.log(r2[0]);*/
+		/*console.log(num3.toString(16));*/
+		
+	</script>
+</head>
+<body>
+	a asds
+</body>
+</html>
