@@ -1,0 +1,169 @@
+body {
+  margin: 0px;
+}
+.slide {
+  margin: 100px;
+  width: 1200px;
+  height: 240px;
+  position: relative;
+  border: 1px solid;
+  -webkit-perspective: 600;
+  /* Safari and Chrome */
+  display: inline-block;
+}
+.slide img {
+  width: 387.09677419px;
+  height: 220px;
+  box-shadow: 0px 10px 10px 0px #9E9E9E;
+  border-radius: 3px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  animation-timing-function: linear;
+}
+.slide .status0 {
+  -webkit-transform: translate(0px, 0px) rotateY(30deg) scale(1, 1);
+  -webkit-transform-origin: 0% 0%;
+  z-index: 1;
+}
+.slide .status1 {
+  -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+  -webkit-transform-origin: 0% 0%;
+  z-index: 2;
+}
+.slide .status2 {
+  -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+  -webkit-transform-origin: 100% 0%;
+  z-index: 1;
+}
+@keyframes mykef01 {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotateY(30deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 1;
+  }
+  50% {
+    z-index: 2;
+  }
+  100% {
+    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 2;
+  }
+}
+@keyframes mykef12 {
+  0% {
+    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 2;
+  }
+  50% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform-origin: 100% 0%;
+    z-index: 1;
+  }
+}
+@keyframes mykef20 {
+  0% {
+    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform-origin: 100% 0%;
+    z-index: 1;
+  }
+  50% {
+    -webkit-transform: translate(250px, 20px) rotateY(0deg) scale(0.8, 0.8);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotateY(30deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 1;
+  }
+}
+@keyframes mykef10 {
+  0% {
+    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 2;
+  }
+  50% {
+    z-index: 2;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotateY(30deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 1;
+  }
+}
+@keyframes mykef21 {
+  0% {
+    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform-origin: 100% 0%;
+    z-index: 1;
+  }
+  50% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 2;
+  }
+}
+@keyframes mykef02 {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotateY(30deg) scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    z-index: 1;
+  }
+  50% {
+    -webkit-transform: translate(250px, 20px) rotateY(0deg) scale(0.8, 0.8);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform-origin: 100% 0%;
+    z-index: 1;
+  }
+}
+.slide .animation01 {
+  animation: mykef01 0.5s;
+}
+.slide .animation12 {
+  animation: mykef12 0.5s;
+}
+.slide .animation20 {
+  animation: mykef20 0.5s;
+}
+.slide .animation10 {
+  animation: mykef10 0.5s;
+}
+.slide .animation21 {
+  animation: mykef21 0.5s;
+}
+.slide .animation02 {
+  animation: mykef02 0.5s;
+}
+.slide img:nth-of-type(1) {
+  position: absolute;
+  -webkit-transform: translate(0px, 0px) rotateY(30deg) scale(1, 1);
+  -webkit-transform-origin: 0% 0%;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
+.slide img:nth-of-type(2) {
+  position: absolute;
+  -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+  -webkit-transform-origin: 0% 0%;
+  z-index: 2;
+  animation-fill-mode: forwards;
+}
+.slide img:nth-of-type(3) {
+  position: absolute;
+  -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+  -webkit-transform-origin: 100% 0%;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
