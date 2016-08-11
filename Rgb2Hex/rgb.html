@@ -6,7 +6,7 @@
 	<script type="text/javascript">
 		//位数不够补零
 		function PrefixInteger(num, n) {
-            return (Array(n).join(0) + num).slice(-n);
+           return ("000000"+num).slice(-n);
         }
         //过滤数字
 		var reg=/\d+/g;
@@ -15,8 +15,9 @@
         	var hexs=[];
         	for (var i = 0; i < rgbs.length; i++) {
         		var hex="#";//数组中每一个hex值
+        		var r=rgbs[i].match(reg);
         		for(var j=0;j<3;j++){
-        			hex+=PrefixInteger(parseInt(rgbs[i].match(reg)[j]).toString(16),2);
+        			hex+=PrefixInteger(parseInt(r[j]).toString(16),2);
         		}
         		hexs.push(hex);
         	}
@@ -28,27 +29,22 @@
 		function Hex2Rgb(hexs){
 			var rgbs=[];
 			for (var i = 0; i < hexs.length; i++) {
-				var rgb="";
+				var h=hexs[i].replace(/#/,"");
+				var rgb="rgb(";
 				for(var j=0;j<3;j++){
-					rgb+=hexs[i].replace(/#/,"").split(2);
+					if(j!=2){rgb+=parseInt(h.substr(j*2,2),16)+",";}
+					else{
+						rgb+=parseInt(h.substr(j*2,2),16)+")";
+					}
 				}
-					rgbs.push(rgb);
-				/*rgbs.push();*/
+				rgbs.push(rgb);
 			}
 			return rgbs;
 		}	
 		console.log(Hex2Rgb(hexs));
-
-
-		/*var rgb1='rgb(247,163,001)';
-		var r2=rgb1.match(reg);
-		console.log(r2);
-		console.log(r2[0]);*/
-		/*console.log(num3.toString(16));*/
-		
 	</script>
 </head>
 <body>
-	a asds
+
 </body>
 </html>
