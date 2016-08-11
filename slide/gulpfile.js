@@ -1,6 +1,5 @@
 var gulp=require("gulp");
 var	connect=require("gulp-connect");
-var	sass=require('gulp-ruby-sass');
 //起服务
 gulp.task('connect',function(){
     connect.server({
@@ -15,7 +14,7 @@ gulp.task('html',function(){
 })
 //监听所有html文件，改动了触发上一条任务
 gulp.task('watch',function(){
-    gulp.watch(['*.html','css/*.css'],['html'])
+    gulp.watch(['*.html','css/*.css','js/*.js'],['html'])
 })
 //default默认起服务和监听
 gulp.task('default',['connect','watch'])
