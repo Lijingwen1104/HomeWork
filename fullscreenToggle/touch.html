@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		#t{
+			width:300px;
+			height:300px;
+			border:1px solid;
+		}
+		#test{
+			margin-top:2em;
+			width:300px;
+			height:150px;
+			border:1px solid;
+
+		}
+	</style>
+	<script type="text/javascript">
+		function startup(){
+			document.addEventListener('touchmove', function (event) {
+			event.preventDefault();
+			}, false);
+
+			var doc=document.getElementById('t');
+			doc.addEventListener("touchstart", handleStart, false);
+			function handleStart(evt){
+				document.getElementById('left').innerHTML=evt.touches[0].pageX;
+				document.getElementById('right').innerHTML=evt.touches[0].pageY;
+			}
+			doc.addEventListener("touchend", handleEnd, false);
+			function  handleEnd(evt){
+				document.getElementById('eleft').innerHTML=evt.touches[0].pageX;
+				document.getElementById('eright').innerHTML=evt.touches[0].pageY;
+			}
+		}
+	</script>
+</head>
+<body  onload="startup()">
+	<div id="t">
+		
+	</div>
+	<div id="test">
+		left:<span id="left">1</span>
+		<br>
+		rigth:<span id="right">2</span>
+		<br>
+		eleft:<span id="eleft">1</span>
+		<br>
+		erigth:<span id="eright">2</span>
+	</div>
+</body>
+</html>
