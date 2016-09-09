@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid red;
+  width: 500px;
+  list-style-type: none;
+  position: relative;
+  display: block;
+}
+li {
+  list-style: none;
+  border: 1px solid;
+  width: 280px;
+  position: absolute;
+}
+img {
+  margin: 0px;
+}
