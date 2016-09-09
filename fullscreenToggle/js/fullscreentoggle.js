@@ -10,7 +10,7 @@ Zepto(function($){
 		//禁止默认滑动事件
 		document.addEventListener('touchmove', function (event) {
 			event.preventDefault();
-		}, false);	
+		}, false);
 		//上滑
 		doc.swipeUp(function(){
 			if(0<now&&now<len){
