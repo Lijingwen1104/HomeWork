@@ -3,8 +3,8 @@ var	connect=require("gulp-connect");
 //起服务
 gulp.task('connect',function(){
     connect.server({
-        livereload: true,
         prot:8001,
+        livereload: true,
     })
 })
 //刷新所有html
