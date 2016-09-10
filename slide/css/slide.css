@@ -3,8 +3,8 @@ body {
 }
 .slide {
   margin: 100px;
-  width: 1200px;
-  height: 240px;
+  width: 900px;
+  height: 300px;
   position: relative;
   border: 1px solid;
   -webkit-perspective: 600;
@@ -12,8 +12,8 @@ body {
   display: inline-block;
 }
 .slide img {
-  width: 387.09677419px;
-  height: 220px;
+  width: 493.5483871px;
+  height: 300px;
   box-shadow: 0px 10px 10px 0px #9E9E9E;
   border-radius: 3px;
   margin: 0px;
@@ -27,12 +27,12 @@ body {
   z-index: 1;
 }
 .slide .status1 {
-  -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+  -webkit-transform: translate(200px, 0px) rotateY(0deg) scale(1, 1);
   -webkit-transform-origin: 0% 0%;
   z-index: 2;
 }
 .slide .status2 {
-  -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+  -webkit-transform: translate(400px, 0px) rotateY(-30deg) scale(1, 1);
   -webkit-transform-origin: 100% 0%;
   z-index: 1;
 }
@@ -46,14 +46,14 @@ body {
     z-index: 2;
   }
   100% {
-    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform: translate(200px, 0px) rotateY(0deg) scale(1, 1);
     -webkit-transform-origin: 0% 0%;
     z-index: 2;
   }
 }
 @keyframes mykef12 {
   0% {
-    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform: translate(200px, 0px) rotateY(0deg) scale(1, 1);
     -webkit-transform-origin: 0% 0%;
     z-index: 2;
   }
@@ -61,14 +61,14 @@ body {
     z-index: 1;
   }
   100% {
-    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform: translate(400px, 0px) rotateY(-30deg) scale(1, 1);
     -webkit-transform-origin: 100% 0%;
     z-index: 1;
   }
 }
 @keyframes mykef20 {
   0% {
-    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform: translate(400px, 0px) rotateY(-30deg) scale(1, 1);
     -webkit-transform-origin: 100% 0%;
     z-index: 1;
   }
@@ -84,7 +84,7 @@ body {
 }
 @keyframes mykef10 {
   0% {
-    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform: translate(200px, 0px) rotateY(0deg) scale(1, 1);
     -webkit-transform-origin: 0% 0%;
     z-index: 2;
   }
@@ -99,7 +99,7 @@ body {
 }
 @keyframes mykef21 {
   0% {
-    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform: translate(400px, 0px) rotateY(-30deg) scale(1, 1);
     -webkit-transform-origin: 100% 0%;
     z-index: 1;
   }
@@ -107,7 +107,7 @@ body {
     z-index: 1;
   }
   100% {
-    -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+    -webkit-transform: translate(200px, 0px) rotateY(0deg) scale(1, 1);
     -webkit-transform-origin: 0% 0%;
     z-index: 2;
   }
@@ -123,7 +123,7 @@ body {
     z-index: 0;
   }
   100% {
-    -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+    -webkit-transform: translate(400px, 0px) rotateY(-30deg) scale(1, 1);
     -webkit-transform-origin: 100% 0%;
     z-index: 1;
   }
@@ -155,14 +155,14 @@ body {
 }
 .slide img:nth-of-type(2) {
   position: absolute;
-  -webkit-transform: translate(266.66666667px, 0px) rotateY(0deg) scale(1, 1);
+  -webkit-transform: translate(200px, 0px) rotateY(0deg) scale(1, 1);
   -webkit-transform-origin: 0% 0%;
   z-index: 2;
   animation-fill-mode: forwards;
 }
 .slide img:nth-of-type(3) {
   position: absolute;
-  -webkit-transform: translate(533.33333333px, 0px) rotateY(-30deg) scale(1, 1);
+  -webkit-transform: translate(400px, 0px) rotateY(-30deg) scale(1, 1);
   -webkit-transform-origin: 100% 0%;
   z-index: 1;
   animation-fill-mode: forwards;

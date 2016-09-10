@@ -2,8 +2,8 @@ body{
 	margin: 0px;
 }
 @time:0.5s;
-@slide-width:1200px;
-@slide-height:240px;
+@slide-width:900px;
+@slide-height:300px;
 @distance:4.5;
 .slide{
 	margin:100px;
@@ -14,8 +14,8 @@ body{
 	-webkit-perspective:600; /* Safari and Chrome */
 	display:inline-block;
 	img{
-		width:@slide-width/3.1;
-		height:220px;
+		width:@slide-width*1.7/3.1;
+		height:@slide-height;
 	    box-shadow: 0px 10px 10px 0px #9E9E9E;
 	    border-radius: 3px;
 	    margin:0px;
@@ -127,9 +127,9 @@ body{
 	.animation02{
 		animation: mykef02 @time;
 	}
-	img:nth-of-type(1){
+	img:nth-of-type(1){ 
 		position:absolute;
-		.status0;
+		.status0;     
 		animation-fill-mode: forwards;
 	}
 	img:nth-of-type(2){
