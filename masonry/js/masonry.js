@@ -5,7 +5,7 @@
 
 		/*console.log(u[0].children[0].offsetHeight);
 		console.log(u[0].offsetHeight);*/
-		//一共四行
+		//一共四列
 		var  lines=4;
 		//当前各列高度初始化
 		var heights = new Array();
@@ -34,10 +34,27 @@
 			})(attr.length-1);
 		}
 		//masonry高度设置
-		masonry.style.height=getMax(heights)+"px";
-		//定位当前li
-		masonry.children[1].style.left="300px";
+		
+		//设置left和top
+		for (var i = 0; i < masonry.children.length; i++) {
+			/*masonry.children[i].style.left=280*(i%lines)+"px";*/
+			//第一排top
+			if(i<lines){
+				masonry.children[i].style.top="0px";
+				masonry.children[i].style.left=280*(i%lines)+"px";
+			}else{
+				masonry.children[i].style.top=getMin(heights).val+masonry.children[i].style.height+"px";
+				var n=getMin(heights).num;
+				masonry.children[i].style.left=280*n+"px";
+				heights[n]+=masonry.children[i].offsetHeight;
+				console.log("第"+i+"个高度数组"+heights);
+			}
+		}	
+		masonry.style.height=getMin(heights).val+"px";
+		//设置height
 		console.log(getMin(heights));
 		console.log(getMax(heights));
+		
+		console.log("rr");
 	}
 })(); 
